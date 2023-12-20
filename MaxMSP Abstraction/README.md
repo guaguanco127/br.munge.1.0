@@ -72,7 +72,7 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 4. In the Max patch you are using, create an object called br.munge.abs.1.0 followed by a one-word argument to name the internal buffer. This should be a buffer name that is not used elsewhere in your project. For example: If you wish to call your buffer name "buffname1" then you must call your object [br.munge.abs.1.0 buffname1] (do not include brackets. And, if you wish to create a second abstraction with a buffer name of "buffname2" then call your object [br.munge.abs.1.0 buffname2]
 
-5. Alternatively, you could also create this inside of a bpatcher object and use all of the preset UI objects that are featured inside of the object. To do this, create a bpatcher object. Then, go insie of its inspector, select "choose" next to "Patcher File" and select the br.munge.abs.1.0.maxpat located within the same folder as your prject. Then, select "edit" next to "Argument(s) and choose a one-word argument to name the internal buffer.
+5. Alternatively, you could also create this inside of a bpatcher object and use all of the preset UI objects that are featured inside of the object. To do this, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select the br.munge.abs.1.0.maxpat located within the same folder as your prject. Then, select "edit" next to "Argument(s) and choose a one-word argument to name the internal buffer.
 
 ## <a name="Use"></a>How To Use
 
