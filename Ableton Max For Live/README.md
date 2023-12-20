@@ -20,27 +20,27 @@ These files were created with Max/MSP version 8.5.6.
 
 ## <a name="About"></a>About
 
-This is a patch//device built in Max/MSP that allows the user to apply real time granulation of a stereo signal. It is made as an emulation of the munger~ external object from Max/MSP, but with additional features. 
+This is a patch//device built in Max/MSP that allows the user to apply real-time granulation of a stereo signal. It emulates the munger~ external object from Max/MSP with additional features.
   
-**Voices:** The total number of active granular voices at a time. The default is 0, and the maximum is 10. The more active voices, the higher the current use of CPU. When the number is reduced in real-time, any active voice completes its current grain before shutting off. However, returing the number to 0 immediately mutes all grains. 
+**Voices:** The total number of active granular voices at a time. The default is 0, and the maximum is 10. The more active voices, the higher the current use of CPU. When the number is reduced in real-time, any active voice completes its present grain before shutting off. However, returning the number to 0 immediately mutes all grains.
  
-**Dry/Wet:** The amount of dry and wet signal between 0. and 100. The default is 50.    
+**Dry/Wet:** The amount of dry and wet signal between 0. and 100. The default is 50. 
 
-**Delay 1:** The first delay time in ms between 0 and 1000 which defines how far back a grain could look into a delay line. "Delay 1" is compared with "Delay 2" and a random delay is chosen in between these two parameters. The range is between 0 ms and 1000 ms with the default set to 0. 
+**Delay 1:** The first delay time in ms between 0 and 1000, which defines how far back a grain could look into a delay line. "Delay 1" is compared with "Delay 2" and a random delay is chosen between these two parameters. The range is between 0 ms and 1000 ms with the default set to 0.
   
-**Delay 2:** The second delay time in ms between 0 and 1000 which defines how far back a grain could look into a delay line. "Delay 1" is compared with "Delay 2" and a random delay is chosen in between these two parameters. The range is between 0 ms and 1000 ms with the default set to 1000 ms.  
+**Delay 2:** The second delay time in ms between 0 and 1000, which defines how far back a grain could look into a delay line. "Delay 1" is compared with "Delay 2" and a random delay is chosen between these two parameters. The range is between 0 ms and 1000 ms, with the default set to 1000 ms.
 
-**Size 1:** The first potential grain size. "Size 1" is compared with "Size 2" and a random size is chosen in between these two parameters. The range is between 5 ms and 1000 ms with the default set to 250 ms. 
+**Size 1:** The first potential grain size. "Size 1" is compared with "Size 2" and a random size is chosen between these two parameters. The range is between 5 ms and 1000 ms, with the default set to 250 ms. 
  
-**Size 2:** The second potential grain size. "Size 1" is compared with "Size 2" and a random size is chosen in between these two parameters. The range is between 5 ms and 1000 ms with the default set to 500 ms.  
+**Size 2:** The second potential grain size. "Size 1" is compared with "Size 2" and a random size is chosen between these two parameters. The range is between 5 ms and 1000 ms, with the default set to 500 ms.  
  
-**Speed 1:** The first potential speed of the granular playback. "Speed 1" is compared with "Speed 2" and a random speed is chosen in between these two parameters. The range is between 0.25 and 128.0 with the default set to 1.0. 
+**Speed 1:** The first potential speed of the granular playback. "Speed 1" is compared with "Speed 2" and a random speed is chosen between these two parameters. The range is between 0.25 and 128.0 with the default set to 1.0. 
 
-**Speed 2:** The second potential speed of the granular playback. "Speed 1" is compared with "Speed 2" and a random speed is chosen in between these two parameters. The range is between 0.25 and 128.0 with the default set to 1.0. 
+**Speed 2:** The second potential speed of the granular playback. "Speed 1" is compared with "Speed 2" and a random speed is chosen between these two parameters. The range is between 0.25 and 128.0 with the default set to 1.0. 
  
-**Separation 1:** The first potential duration in ms for a separation between the end of one grain and the start of another within a particular voice. This only operates while a voice is active. "Separation 1" is compared with "Separation 2" and a random separation duration is chosen in between these two parameters. The range is between 0 and 1000 The default is 0 ms.   
+**Separation 1:** The first potential duration in ms for a separation between the end of one grain and the start of another within a particular voice. This only operates while a voice is active. "Separation 1" is compared with "Separation 2" and a random separation duration is chosen between these two parameters. The range is between 0 and 1000 The default is 0 ms.   
 
-**Separation 2:** The second potential duration in ms for a separation between the end of one grain and the start of another within a particular voice. This only operates while a voice is active. "Separation 1" is compared with "Separation 2" and a random separation duration is chosen in between these two parameters. The range is between 0 and 1000 The default is 1000 ms.
+**Separation 2:** The second potential duration in ms for a separation between the end of one grain and the start of another within a particular voice. This only operates while a voice is active. "Separation 1" is compared with "Separation 2" and a random separation duration is chosen between these two parameters. The range is between 0 and 1000 The default is 1000 ms.
 
 **Grain Play Direction:** Defines which direction the grains may play: Normal, reverse, or random. 
 
@@ -48,7 +48,7 @@ This is a patch//device built in Max/MSP that allows the user to apply real time
  
 **Pan Mode:** Defines how the grains will be panned in the stereo field. The different modes are sine tone, right (each grain moves from left to right), triangle, left (each grain moves from right to left), alt (each grain alternates between hard left then right), rand step (each grain starts from a random position) and rand ramp (each grain pans in a random direction for its duration before moving differently each time)
 
-**Amp Mode:** Defines how amplitude envelopes will be applied to each grain. Sine moves up then down, up moves from silence up to full amplitude for the duration of the grain, tri moves down then up, down starts at full amplitude then down to silence, rand step is a random amplitude for the duration of each grain, and rand ramp is an envelope that ramps up and down randomly across the duration of the grain. 
+**Amp Mode:** Defines how amplitude envelopes will be applied to each grain. Sine moves up then down, up moves from silence up to full amplitude for the duration of the grain, tri moves down then up, down starts at full amplitude then down to silence, rand step is a random amplitude for the duration of each grain, and rand ramp is an envelope that ramps up and down randomly across the duration of the grain.
 
 
 ## <a name="M4L"></a>What Is a Max For Live Device?
@@ -70,7 +70,7 @@ Copy and paste br.munge.1.0.amxd into that folder
   
 5. Open Ableton Live. On the left-hand side, look for Max for Live > Max Audio Effect and then the name of this device.
 
-6. Either double click on the device, or drag/drop it onto the track where you wish to use it.  
+6. Either double-click on the device, or drag/drop it onto the track where you wish to use it.  
     
 
 
