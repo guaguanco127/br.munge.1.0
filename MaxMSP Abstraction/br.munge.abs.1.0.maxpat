@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -524.0, -1080.0, 543.0, 175.0 ],
+		"rect" : [ -524.0, -1080.0, 515.0, 166.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-52",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -50,6 +51,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 55.5, 10.25, 35.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
@@ -62,6 +71,7 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[12]"
 				}
 
@@ -76,12 +86,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 297.0, 29.25, 56.0, 20.0 ],
 					"text" : "Direction",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-56",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -92,6 +104,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 241.5, 92.75, 48.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[11]",
 							"parameter_mmax" : 0.99,
@@ -102,12 +122,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[11]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-196",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -118,6 +140,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 12.5, 10.25, 32.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[9]",
 							"parameter_mmax" : 10.0,
@@ -128,12 +158,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[9]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-61",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -144,6 +176,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 12.5, 92.75, 32.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 50 ],
 							"parameter_initial_enable" : 1,
@@ -156,6 +196,7 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[10]"
 				}
 
@@ -198,6 +239,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-75",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -208,6 +250,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 241.5, 10.25, 48.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 100 ],
 							"parameter_initial_enable" : 1,
@@ -220,6 +270,7 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[8]"
 				}
 
@@ -298,6 +349,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-83",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -308,6 +360,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 189.5, 92.75, 34.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_initial_enable" : 1,
@@ -320,12 +380,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[7]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-84",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -336,6 +398,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 189.5, 10.25, 34.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
@@ -348,12 +418,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[6]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-85",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -364,6 +436,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 149.0, 92.75, 33.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_exponent" : 7.5,
 							"parameter_initial" : [ 1 ],
@@ -378,12 +458,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[5]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-86",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -394,6 +476,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 149.0, 10.25, 33.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_exponent" : 7.5,
 							"parameter_initial" : [ 1 ],
@@ -408,12 +498,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[4]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-87",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -424,6 +516,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 102.5, 92.75, 34.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 500.0 ],
 							"parameter_initial_enable" : 1,
@@ -437,12 +537,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[2]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-89",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -453,6 +555,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 102.5, 10.25, 34.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 250.0 ],
 							"parameter_initial_enable" : 1,
@@ -466,12 +576,14 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[3]"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-90",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -482,6 +594,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 55.5, 92.75, 35.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 1000.0 ],
 							"parameter_initial_enable" : 1,
@@ -494,6 +614,7 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.dial[1]"
 				}
 
@@ -506,8 +627,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1792.5, 405.75, 63.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 353.5, 10.25, 63.0, 20.0 ],
-					"text" : "Pan Mode"
+					"presentation_rect" : [ 362.5, 3.25, 63.0, 20.0 ],
+					"text" : "Pan Mode",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -523,6 +645,7 @@
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 441.5, 3.25, 59.0, 33.0 ],
 					"text" : "Amp Mode",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -7167,6 +7290,24 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 374.5, 431.25, 130.0, 22.0 ],
 					"text" : "buffer~ munger 8010 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-1",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1641.333333373069763, 987.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -0.5, 0.0, 516.87837815284729, 169.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0
 				}
 
 			}
