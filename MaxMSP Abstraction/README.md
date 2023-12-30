@@ -1,5 +1,4 @@
-# Max/MSP Abstraction: br.freeze.abs-1.0  
-   
+# Max/MSP Abstraction:   
 ## br.munge.1.0
 
 
