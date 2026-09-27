@@ -26,6 +26,7 @@ Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6.
 - **Pan and Amp modes complete within each grain.** Right-Left, Alt, Rand Step and Rand Ramp previously stretched across two grains and could drift out of step with them. Rand Step now picks one random value per grain and holds it for the whole grain.
 - **Constant-power stereo panning.** Panning no longer drops a channel at the edges: both channels are panned and folded together, so nothing is lost when a grain moves hard left or right.
 - **Feedback stays stable at any voice count.** Feedback is now scaled by the number of active voices (and capped internally), so the same Feedback setting behaves the same with 1 voice or 10. Feedback still ping-pongs between left and right.
+- **Freeze.** Freezing stops the recording and lets the grains keep playing from only the last moments before you pressed it -- the window set by your longest Delay time (at least 100 ms). No older material and no silent gaps come back; the loop point and freezing/releasing are crossfaded so nothing clicks. Feedback stops writing while frozen.
 - **Lower CPU.** Roughly a third less CPU with all 10 voices active.
 
 ## <a name="About"></a>About
@@ -62,6 +63,8 @@ This is a patch//device built in Max/MSP that allows the user to apply real-time
 
 **Feedback:** Feeds the wet signal back into the munge effect, ping-ponging between left and right. The range is between 0. and 0.99, with the default set to 0. It is scaled by the number of active voices, so it behaves the same at any voice count.
 
+**Freeze:** Stops recording and keeps the grains playing from the last moments of audio before freezing -- the window set by the longest Delay time at the moment you freeze (at least 100 ms). Grains keep their size, speed, direction, pan and amp settings, but every grain stays inside that window, so no older material or silent gaps come back. Freezing and releasing are crossfaded, and so is the point where the window loops. The default is off.
+
 
 
 ## <a name="M4L"></a>What Is a Max For Live Device?
@@ -83,7 +86,7 @@ Copy and paste br.munge.1.1.amxd into that folder
   
 5. Open Ableton Live. On the left-hand side, look for Max for Live > Max Audio Effect and then the name of this device.
 
-6. Either double-click on the device, or drag/drop it onto the track where you wish to use it. You can use several br.munge devices in the same Live set -- each one has its own internal buffer.  
+6. Either double-click on the device, or drag/drop it onto the track where you wish to use it. You can use several br.munge devices in the same Live set -- each one has its own internal buffer. The Freeze button (Live / Frozen) can be automated like any other parameter.  
     
 
 
