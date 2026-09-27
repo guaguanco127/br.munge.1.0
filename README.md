@@ -1,6 +1,6 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.munge.1.0
+## br.munge.1.1
 
 
 
@@ -9,17 +9,27 @@ By Brian Riordan
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.munge.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.munge.1.0](https://github.com/guaguanco127/br.munge.1.0)  
+Repository for br.munge.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.munge.1.1](https://github.com/guaguanco127/br.munge.1.1)  
 Additional programs can be found here: [https://github.com/guaguanco127/plugins](https://github.com/guaguanco127/plugins)
 
-These files were created with Max/MSP version 8.5.6. 
+Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
 
 ## Links
 
+[What's New in 1.1](#whats-new-in-11)  
 [About](#About)   
-[Ableton Max for Live Device](https://github.com/guaguanco127/br.munge.1.0/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
-[Max/MSP Abstraction](https://github.com/guaguanco127/br.munge.1.0/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP   
+[Ableton Max for Live Device](https://github.com/guaguanco127/br.munge.1.1/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
+[Max/MSP Abstraction](https://github.com/guaguanco127/br.munge.1.1/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP   
 
+
+## What's New in 1.1
+
+- **Voices retrigger themselves.** Each voice now runs its own grain → separation → grain loop, sample-accurately, inside the voice. The old round trip (voice finishes → message back to the main patch → scheduled retrigger) is gone, so separation times are exact.
+- **No buffer name needed.** Every instance creates its own internal buffer automatically, so any number of br.munge instances can run side by side. (Max for Live: fixed a bug where two br.munge devices in the same Live set shared one buffer.)
+- **Pan and Amp modes complete within each grain.** Right-Left, Alt, Rand Step and Rand Ramp previously stretched across two grains and could drift out of step with them. Rand Step now picks one random value per grain and holds it for the whole grain.
+- **Constant-power stereo panning.** Panning no longer drops a channel at the edges: both channels are panned and folded together, so nothing is lost when a grain moves hard left or right.
+- **Feedback stays stable at any voice count.** Feedback is now scaled by the number of active voices (and capped internally), so the same Feedback setting behaves the same with 1 voice or 10. Feedback still ping-pongs between left and right.
+- **Lower CPU.** Roughly a third less CPU with all 10 voices active.
 
 ## <a name="About"></a>About
 
@@ -52,4 +62,7 @@ This is a patch//device built in Max/MSP that allows the user to apply real-time
 **Pan Mode:** Defines how the grains will be panned in the stereo field. The different modes are sine tone, right (each grain moves from left to right), triangle, left (each grain moves from right to left), alt (each grain alternates between hard left then right), rand step (each grain starts from a random position) and rand ramp (each grain pans in a random direction for its duration before moving differently each time)
 
 **Amp Mode:** Defines how amplitude envelopes will be applied to each grain. Sine moves up then down, up moves from silence up to full amplitude for the duration of the grain, tri moves down then up, down starts at full amplitude then down to silence, rand step is a random amplitude for the duration of each grain, and rand ramp is an envelope that ramps up and down randomly across the duration of the grain.
+
+**Feedback:** Feeds the wet signal back into the munge effect, ping-ponging between left and right. The range is between 0. and 0.99, with the default set to 0. It is scaled by the number of active voices, so it behaves the same at any voice count.
+
 
