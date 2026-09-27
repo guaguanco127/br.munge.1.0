@@ -9,7 +9,7 @@ By Brian Riordan
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.munge.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.munge.1.1](https://github.com/guaguanco127/br.munge.1.1)  
+Repository for br.munge.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.munge](https://github.com/guaguanco127/br.munge)  
 Additional programs can be found here: [https://github.com/guaguanco127/plugins](https://github.com/guaguanco127/plugins)
 
 Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
@@ -18,8 +18,8 @@ Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6.
 
 [What's New in 1.1](#whats-new-in-11)  
 [About](#About)   
-[Ableton Max for Live Device](https://github.com/guaguanco127/br.munge.1.1/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
-[Max/MSP Abstraction](https://github.com/guaguanco127/br.munge.1.1/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP   
+[Ableton Max for Live Device](https://github.com/guaguanco127/br.munge/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
+[Max/MSP Abstraction](https://github.com/guaguanco127/br.munge/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP   
 
 
 ## What's New in 1.1

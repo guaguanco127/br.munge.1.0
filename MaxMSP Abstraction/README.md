@@ -8,7 +8,7 @@ By Brian Riordan
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.munge.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.munge.1.1](https://github.com/guaguanco127/br.munge.1.1)  
+Repository for br.munge.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.munge](https://github.com/guaguanco127/br.munge)  
 Additional programs can be found here: [https://github.com/guaguanco127/plugins](https://github.com/guaguanco127/plugins)
 
 Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
