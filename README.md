@@ -30,6 +30,7 @@ Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6.
 - **Constant-power stereo panning.** Panning no longer drops a channel at the edges: both channels are panned and folded together, so nothing is lost when a grain moves hard left or right.
 - **Feedback stays stable at any voice count.** Feedback is now scaled by the number of active voices (and capped internally), so the same Feedback setting behaves the same with 1 voice or 10. Feedback still ping-pongs between left and right.
 - **Freeze.** Freezing stops the recording and lets the grains keep playing from only the last moments before you pressed it -- the window set by your longest Delay time (at least 100 ms). No older material and no silent gaps come back; the loop point and freezing/releasing are crossfaded so nothing clicks. Feedback stops writing while frozen.
+- **Even-sounding amp envelopes.** Amp Mode shapes now move in decibels rather than raw amplitude (from -40 dB up to full level), so swells and fades sound even to the ear instead of jumping up and hanging near the top. Rand Step and Rand Ramp are more dynamic as a result.
 - **Lower CPU.** Roughly a third less CPU with all 10 voices active.
 
 ## <a name="About"></a>About
@@ -62,7 +63,7 @@ This is a patch//device built in Max/MSP that allows the user to apply real-time
  
 **Pan Mode:** Defines how the grains will be panned in the stereo field. The different modes are sine tone, right (each grain moves from left to right), triangle, left (each grain moves from right to left), alt (each grain alternates between hard left then right), rand step (each grain starts from a random position) and rand ramp (each grain pans in a random direction for its duration before moving differently each time)
 
-**Amp Mode:** Defines how amplitude envelopes will be applied to each grain. Sine moves up then down, up moves from silence up to full amplitude for the duration of the grain, tri moves down then up, down starts at full amplitude then down to silence, rand step is a random amplitude for the duration of each grain, and rand ramp is an envelope that ramps up and down randomly across the duration of the grain.
+**Amp Mode:** Defines how amplitude envelopes will be applied to each grain. Sine moves up then down, up moves from silence up to full amplitude for the duration of the grain, tri moves down then up, down starts at full amplitude then down to silence, rand step is a random amplitude for the duration of each grain, and rand ramp is an envelope that ramps up and down randomly across the duration of the grain. The shapes move in decibels (from -40 dB up to full level), so they swell and fade evenly to the ear.
 
 **Feedback:** Feeds the wet signal back into the munge effect, ping-ponging between left and right. The range is between 0. and 0.99, with the default set to 0. It is scaled by the number of active voices, so it behaves the same at any voice count.
 
