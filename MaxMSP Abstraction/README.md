@@ -92,37 +92,27 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 ## <a name="Use"></a>How To Use
 
-The first two inlets are for the left and the right stereo signals. 
+The first two inlets are for the left and the right stereo signals. The two outlets are the left and right outputs.
 
-The 3rd inlet determines the total number of active granular voices at a time. It takes an integer. The default is 0, and the maximum is 10. The more active voices, the higher the current use of CPU. When the number is reduced in real-time, any active voice completes its current grain before shutting off. However, returning the number to 0 immediately mutes all grains from the wet signal. 
+Every control has its own inlet. Sending a value to an inlet moves its on-screen control too, so the display always matches the sound. Hover over an inlet in Max to see the same information.
 
-The 4th inlet is he amount of dry and wet signal. It takes a float between 0. and 100. The default is 50.   
-    
-The 5th and 6th inlets define the randomized range of the delay times in ms. They take a float between 0. and 1000. "Delay 1" is compared with "Delay 2" and a random delay is chosen in between these two parameters. "Delay 1" is defaulted to 0 and "Delay 2" is defaulted to 1000. 
-
-The 7th and 8th inlets define the randomized range of the grain sizes in ms. They take a float between 5. and 1000. "Size 1" is compared with "Size 2" and a random size is chosen in between these two parameters. "Size 1" is defaulted to 250 and "Size 2" is defaulted to 500. 
-
-The 9th and 10th inlets define the randomized range of the playback speed of each grain. They take a float between 0.25 and 128. "Speed 1 is compared with "Speed 2" and a random speed is chosen between these two parameters. 
-
-The 11th and 12th inlets define the randomized separation time between each grain within a voice. This only operates while a voice is active. "Separation 1" is compared with "Separation 2" and a random separation duration is chosen in between these two parameters. The range is between 0 and 1000 The default is 0 ms for "Separation 1" and the default is 1000 ms for "Separation 2"
-
-The 13th inlet is the " Grain Play Direction" which defines which direction the grains may play. They take an integer between 0 and 2. 0 = normal playback, 1 = reverse, 2 = randomized normal or reverse playback. 
-
-The 14th inlet is the "Amp Mode" which defines the amplitude envelope of each grain. It takes an integer between 0 and 6. 0 = off, meaning every grain plays at normal amplitude. 1 = sine, which fades in and out. 2 = up, which starts at silence and ends the grain at full amplitude. 3 = tri, which starts at full amplitude and fades to silence then back to full amplitude during the full grain duration. 4 = down, which starts at full amplitude and fades out to silence. 5 = rand step, which picks a random amplitude at the start of each grain and holds it for the whole grain. 6 = rand ramp, which is an envelope that ramps up and down randomly across the duration of the grain. The shapes move in decibels (from -40 dB up to full level), so they swell and fade evenly to the ear. The default is 0. 
-
-The 15th inlet is the "Pan Mode" which defines how the grains will be panned in the stereo field. It takes an integer between 0 and 7. 0 = off, meaning every grain plays centered, without panning. 1 = sine which pans from left to right then back to left. 2 = right, meaning it starts from the left then pans right. 3 = Right-left, which means it starts left, pans right, then pans back to the left. 4 = left, which starts right then pans to the left. 5 = alt, which is hard left for the first half of each grain and hard right for the second half. 6 = rand step, which places each grain at a random position for its whole duration. 7 = rand ramp, which pans in a random direction for its duration before moving differently each time. The default is 6. 
-
-The 16th inlet is the "Stereo Width" (or the "Spread") which defines how wide the "Pan Mode" spreads out within the stereo field. It takes a float between 0. and 100. and the default is 100. Panning is constant-power: at 100, grains travel all the way to one side with both channels folded in, so nothing is lost. 
-
-The 17th inlet is the feedback, which feeds the resulting wet signal back into the munge effect, ping-ponging between left and right. It takes a float between 0. and 0.99 and the default is set to 0. It is scaled by the number of active voices (and capped internally), so the same setting behaves the same with 1 voice or 10.
-
-The 18th inlet is "Freeze". It takes an integer: 0 = live (default), 1 = frozen. Frozen grains keep playing from only the last moments before freezing -- the window set by the longest Delay time at that moment (at least 100 ms) -- with no older material or gaps. Freezing and releasing are crossfaded so they never click. 
-
-
-
- 
-
-
-
-
-
+| Inlet | Control | Type | Range | Default |
+|---|---|---|---|---|
+| 1 | Left audio in | Signal | | |
+| 2 | Right audio in | Signal | | |
+| 3 | Voices | Int | 0 - 10 | 0 |
+| 4 | Dry/Wet | Float | 0 - 100 % | 50 |
+| 5 | Delay 1 | Float | 0 - 1000 ms | 0 |
+| 6 | Delay 2 | Float | 0 - 1000 ms | 1000 |
+| 7 | Size 1 | Float | 5 - 1000 ms | 250 |
+| 8 | Size 2 | Float | 5 - 1000 ms | 500 |
+| 9 | Speed 1 | Float | 0.25 - 128 | 1 |
+| 10 | Speed 2 | Float | 0.25 - 128 | 1 |
+| 11 | Separation 1 | Float | 0 - 1000 ms | 0 |
+| 12 | Separation 2 | Float | 0 - 1000 ms | 1000 |
+| 13 | Grain Play Direction | Int | 0 = Forward, 1 = Reverse, 2 = Random | 2 |
+| 14 | Amp Mode | Int | 0 = Off, 1 = Sine, 2 = Up, 3 = Tri, 4 = Down, 5 = Rand Step, 6 = Rand Ramp | 0 |
+| 15 | Pan Mode | Int | 0 = Off, 1 = Sine, 2 = Right, 3 = Tri, 4 = Left, 5 = Alt, 6 = Rand Step, 7 = Rand Ramp | 6 |
+| 16 | Spread | Float | 0 - 100 | 100 |
+| 17 | Feedback | Float | 0 - 0.99, capped internally at 0.95 | 0 |
+| 18 | Freeze | Int | 0 = Live, 1 = Frozen | 0 |
